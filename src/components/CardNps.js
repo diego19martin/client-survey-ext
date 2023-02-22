@@ -33,7 +33,7 @@ var playas=0;
 var tribu=0;
 var gale=0;
 var baños=0;
-var esta=0;
+var verdes=0;
 var otros=0;
 
 for(i=0;i<Nps.length;i++){
@@ -60,8 +60,8 @@ for(i=0;i<Nps.length;i++){
     if (Nps[i].disapFeature.includes('Baños')){
       baños++;}
 
-    if (Nps[i].disapFeature.includes('Estacionamiento')){
-      esta++;}
+    if (Nps[i].disapFeature.includes('Espacios verdes')){
+      verdes++;}
 
     if (Nps[i].disapFeature.includes('Otros')){
       otros++;}
@@ -80,7 +80,7 @@ NpsTotal = NpsTotal.toFixed(1)
 
 // console.log(NpsTotal);
 
-ChartPieDetractores(playas,tribu,gale,baños,esta,otros)
+ChartPieDetractores(playas,tribu,gale,baños,verdes,otros)
 
 
   return (

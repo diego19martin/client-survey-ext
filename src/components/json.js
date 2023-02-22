@@ -32,7 +32,7 @@ export const json = {
               "Tribunas",
               "Galerías",
               "Baños",
-              "Estacionamiento",
+              "Espacios Verdes",
               "Otros"
             ],
             
@@ -70,7 +70,7 @@ export const json = {
               "Tribunas",
               "Galerías",
               "Baños",
-              "Estacionamiento",
+              "Espacios verdes",
               "Otros"
             ],
           },
