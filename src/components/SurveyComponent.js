@@ -11,12 +11,12 @@ function SurveyComponent() {
   const survey = new Model(json);
   const alertResults = useCallback(async (sender) => {
 
-      setTimeout(() => {
+     
         const results = JSON.stringify(sender.data);
         console.log(results);
-      }, 10000)
+     
 
-      
+
       try {
         const response = await createSurveyRequest(results);
         console.log(response);
