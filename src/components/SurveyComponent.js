@@ -16,6 +16,11 @@ function SurveyComponent() {
       try {
         const response = await createSurveyRequest(results);
         console.log(response);
+        setTimeout(() => {
+          
+          console.log('especando');
+
+        }, 10000)
       } catch (error) {
           console.error(error);
       }
@@ -23,14 +28,10 @@ function SurveyComponent() {
     [],
   )
 
-  setTimeout(() => {
-    survey.onComplete.add(alertResults);
-    console.log('esperando');
-    return (<Survey model={survey}/>);
-
-  }, 10000);
-
   
+
+    survey.onComplete.add(alertResults);
+    return (<Survey model={survey}/>);
 
   
 }
