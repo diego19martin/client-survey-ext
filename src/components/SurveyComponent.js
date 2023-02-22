@@ -23,7 +23,11 @@ function SurveyComponent() {
     [],
   )
 
-  survey.onComplete.add(alertResults);
+  setTimeout(() => {
+    survey.onComplete.add(alertResults);
+  }, 10000);
+
+  
 
   return (<Survey model={survey}/>);
 }
