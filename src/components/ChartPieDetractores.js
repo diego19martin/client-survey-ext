@@ -55,7 +55,7 @@ for(i=0;i<NpsPie.length;i++){
     if (NpsPie[i].disapFeature.includes('Baños')){
       baños++;}
 
-    if (NpsPie[i].disapFeature.includes('Espacios verdes')){
+    if (NpsPie[i].disapFeature.includes('Espacios Verdes')){
       verdes++;}
 
     if (NpsPie[i].disapFeature.includes('Otros')){
@@ -71,7 +71,7 @@ for(i=0;i<NpsPie.length;i++){
       <Card.Title style={{fontSize:'15px'}}>Cantidad de valoraciones por Detractores</Card.Title>
         <Card.Text>
         <Pie data={{
-          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'Espacios verdes', 'Otros'],
+          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'Espacios Verdes', 'Otros'],
           datasets: [
             {
               label: 'Cantidad votos Detractores',

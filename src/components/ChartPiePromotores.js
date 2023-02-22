@@ -55,8 +55,8 @@ for(i=0;i<NpsPie.length;i++){
     if (NpsPie[i].promFeature.includes('Baños')){
       baños++;}
 
-    if (NpsPie[i].promFeature.includes('Espacios verdes')){
-      esta++;}
+    if (NpsPie[i].promFeature.includes('Espacios Verdes')){
+      verdes++;}
 
     if (NpsPie[i].promFeature.includes('Otros')){
       otros++;}
@@ -71,7 +71,7 @@ for(i=0;i<NpsPie.length;i++){
       <Card.Title style={{fontSize:'15px'}}>Cantidad de valoraciones por Promotores</Card.Title>
         <Card.Text>
         <Pie data={{
-          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'Espacios verdes', 'Otros'],
+          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'Espacios Verdes', 'Otros'],
           datasets: [
             {
               label: 'Cantidad votos Promotores',
