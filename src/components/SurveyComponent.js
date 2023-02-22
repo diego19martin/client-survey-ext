@@ -25,10 +25,13 @@ function SurveyComponent() {
 
   setTimeout(() => {
     survey.onComplete.add(alertResults);
+    console.log('esperando');
+    return (<Survey model={survey}/>);
+
   }, 10000);
 
   
 
-  return (<Survey model={survey}/>);
+  
 }
 export default SurveyComponent;
