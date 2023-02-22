@@ -15,11 +15,10 @@ function SurveyComponent() {
       console.log(results);
       try {
         const response = await createSurveyRequest(results);
-        console.log(response);
+        
         setTimeout(() => {
-          
+          console.log(response);
           console.log('especando');
-
         }, 10000)
       } catch (error) {
           console.error(error);
