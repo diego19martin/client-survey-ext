@@ -71,7 +71,7 @@ for(i=0;i<NpsPie.length;i++){
       <Card.Title style={{fontSize:'15px'}}>Cantidad de valoraciones por Promotores</Card.Title>
         <Card.Text>
         <Pie data={{
-          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'EEspacios verdes', 'Otros'],
+          labels: ['Playas de estacionamiento', 'Tribunas', 'Galerías', 'Baños', 'Espacios verdes', 'Otros'],
           datasets: [
             {
               label: 'Cantidad votos Promotores',
