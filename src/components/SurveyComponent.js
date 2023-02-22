@@ -15,6 +15,7 @@ function SurveyComponent() {
         const results = JSON.stringify(sender.data);
         console.log(results);
       }, 10000)
+
       
       try {
         const response = await createSurveyRequest(results);
