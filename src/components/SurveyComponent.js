@@ -11,15 +11,17 @@ function SurveyComponent() {
   const survey = new Model(json);
   const alertResults = useCallback(async (sender) => {
 
-      const results = JSON.stringify(sender.data);
-      console.log(results);
+      
+
+      setTimeout(() => {
+        const results = JSON.stringify(sender.data);
+        console.log(results);
+      }, 10000)
       try {
         const response = await createSurveyRequest(results);
-        
-        setTimeout(() => {
-          console.log(response);
+        console.log(response);
           console.log('especando');
-        }, 10000)
+       
       } catch (error) {
           console.error(error);
       }
